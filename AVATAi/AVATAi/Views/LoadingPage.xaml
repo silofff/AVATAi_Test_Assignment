@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage
+    x:Class="AVATAi.Views.LoadingPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#80000000"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False"
+    Shell.PresentationMode="ModalNotAnimated">
+
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <ActivityIndicator IsRunning="True" Color="White" Scale="2"/>
+        <Label Text="Sending data..." TextColor="White" HorizontalOptions="Center" Margin="0,10,0,0"/>
+    </VerticalStackLayout>
+</ContentPage>

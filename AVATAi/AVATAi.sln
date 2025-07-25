@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVATAi", "AVATAi\AVATAi.csproj", "{BFD1F48F-4825-4FBB-A0A0-9F2F63BE478C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVATAi.Core", "AVATAi.Core\AVATAi.Core.csproj", "{B8BC43E2-7AB1-45B1-AFCB-A47CF0520BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVATAi.Tests", "AVATAi.Tests\AVATAi.Tests.csproj", "{E4C23B1E-0D01-4569-8C95-1693BA5F265A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFD1F48F-4825-4FBB-A0A0-9F2F63BE478C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD1F48F-4825-4FBB-A0A0-9F2F63BE478C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD1F48F-4825-4FBB-A0A0-9F2F63BE478C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD1F48F-4825-4FBB-A0A0-9F2F63BE478C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BC43E2-7AB1-45B1-AFCB-A47CF0520BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BC43E2-7AB1-45B1-AFCB-A47CF0520BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BC43E2-7AB1-45B1-AFCB-A47CF0520BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BC43E2-7AB1-45B1-AFCB-A47CF0520BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C23B1E-0D01-4569-8C95-1693BA5F265A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C23B1E-0D01-4569-8C95-1693BA5F265A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C23B1E-0D01-4569-8C95-1693BA5F265A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C23B1E-0D01-4569-8C95-1693BA5F265A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,48 @@
+<ContentPage
+    x:Class="AVATAi.Views.WebPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModels="clr-namespace:AVATAi.Core.ViewModels;assembly=AVATAi.Core"
+    x:DataType="viewModels:WebPageViewModel"
+    Title="Browser">
+
+    <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,Auto,*">
+        <Label Text="{Binding DefaultUrlText}"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.Row="0" Grid.Column="0"
+               TextColor="{Binding IsVideoSelected,
+                   Converter={StaticResource BoolToColorConverter},
+                   ConverterParameter='#C0C0C0,#800080'}"/>
+
+        <Switch Grid.Row="0" Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,4"
+                OnColor="Silver"
+                ThumbColor="Purple"
+                IsToggled="{Binding IsVideoSelected}" />
+
+        <Label Text="{Binding VideoUrlText}"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.Row="0" Grid.Column="2"
+               TextColor="{Binding IsVideoSelected,
+                   Converter={StaticResource BoolToColorConverter},
+                   ConverterParameter='#800080,#C0C0C0'}"/>
+
+        <WebView Grid.Row="1"
+                 Grid.ColumnSpan="3"
+                 Source="{Binding DefaultUrlSource}"
+                 IsVisible="{Binding IsVideoSelected, Converter={StaticResource InverseBoolConverter}}"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+        
+        <WebView Grid.Row="1"
+                 Grid.ColumnSpan="3"
+                 Source="{Binding VideoUrlSource}"
+                 IsVisible="{Binding IsVideoSelected}"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"/>
+    </Grid>
+</ContentPage>
